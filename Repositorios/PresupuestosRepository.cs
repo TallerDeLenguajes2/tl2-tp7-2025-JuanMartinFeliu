@@ -60,7 +60,7 @@ namespace presupuestosRepository
             connection.Open();
 
             // WHERE sobre la columna correcta
-            string consulta = "SELECT  idPresupuesto, NombreDestinatario, FechaCreacion FROM Presupuesto WHERE idPresupuesto = @Id";
+            string consulta = "SELECT  idPresupuesto, NombreDestinatario, FechaCreacion FROM Presupuestos WHERE idPresupuesto = @Id";
             using var comando = new SqliteCommand(consulta, connection);
             comando.Parameters.AddWithValue("@Id", idBuscado);
 

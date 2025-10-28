@@ -11,12 +11,12 @@ namespace PresupuestosDetalle
         public Producto Producto { get; set; }
         public int Cantidad { get; set; }
 
-        PresupuestoDetalle()
+        public PresupuestoDetalle()
         {
 
         }
 
-        PresupuestoDetalle(Producto prod, int cant)
+        public PresupuestoDetalle(Producto prod, int cant)
         {
             this.producto = prod;
             this.cantidad = cant;
